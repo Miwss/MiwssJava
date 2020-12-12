@@ -26,5 +26,5 @@ class EmployeeTest{
     Employee emp1 = new Employee(1, "Petrov", 20, 100.0, "IT");
     Employee emp2 = new Employee(2, "Valeiy", 21, 120.0,"HR");
 
-    emp1
+
 }

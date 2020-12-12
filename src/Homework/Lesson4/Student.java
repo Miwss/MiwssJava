@@ -22,6 +22,9 @@ public class Student {
 
 class StudentTest{
     public static void main(String[] args) {
+        Homework.Lesson7.Employee mp3 = new Homework.Lesson7.Employee(1, "Vasya", 21, 100.00, "Car");
+        mp3.print1(mp3.surname);
+        //mp3.print2(mp3.id);
         Student s1 = new Student();
         Student s2 = new Student();
         Student s3 = new Student();
