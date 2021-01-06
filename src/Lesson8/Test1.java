@@ -20,5 +20,6 @@ public class Test1 {
         Test1 t = new Test1();
 
         System.out.println(t.a);
+
     }
 }

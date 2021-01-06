@@ -1,32 +1,35 @@
 package Homework.Lesson14;
 
 public class Time {
-    public static void Method()
-    {
+    public static void Method1() {
+
+        int chas = 0;
         OUTER:
-        for(int chas = 0; chas <= 6; chas++)
+        while(chas < 6)
         {
+            int minuta = -1;
             MIDDLE:
-            for(int minuta = 0; minuta <=59; minuta++)
-            {
-                if(chas > 1 && minuta % 10 ==0)
+            do{
+                minuta++;
+                if(chas > 1 && minuta % 10 == 0)
                 {
                     break OUTER;
                 }
+                int second = 0;
                 INNER:
-                for(int second = 0; second <=59; second++) {
-                    if(second * chas > minuta)
-                    {
-                        continue INNER;
+                while(second < 60){
+                    if(second * chas >minuta){
+                        continue MIDDLE;
                     }
                     System.out.println(chas + ":" + minuta + ":" + second);
+                    second++;
                 }
-            }
+            }while (minuta < 59);
+            chas++;
         }
     }
 
     public static void main(String[] args) {
-        Method();
+        Method1();
     }
-
 }
