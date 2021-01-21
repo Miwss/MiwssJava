@@ -1,7 +1,5 @@
 package Lesson24;
 
-import p4.D;
-
 public class Test2 {
     public static void main(String[] args) {
         Help_able h = new Driver();
