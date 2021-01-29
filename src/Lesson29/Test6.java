@@ -6,15 +6,18 @@ import java.time.format.*;
 
 public class Test6 {
     public static void main(String[] args) {
-        LocalDate ld = LocalDate.of(2016, Month.SEPTEMBER,1);
-        LocalDateTime ldt = LocalDateTime.of(2016, Month.SEPTEMBER,1,16,40);
-        LocalTime lt = LocalTime.of(16,40);
+        LocalDate ld = LocalDate.of(2021, Month.JANUARY,1);
+//        LocalDateTime ldt = LocalDateTime.of(2016, Month.SEPTEMBER,1,16,40);
+//        LocalTime lt = LocalTime.of(16,40);
 
-        DateTimeFormatter f = DateTimeFormatter.ofPattern("MM dd yyyy");
-        LocalDate date1 = LocalDate.parse("01 02 2015",f);
-        System.out.println(date1);
-        LocalDate date2 = LocalDate.parse("2015-02-01");
-        System.out.println(date2);
+//        DateTimeFormatter f = DateTimeFormatter.ofPattern("MM dd yyyy");
+//        LocalDate date1 = LocalDate.parse("01 02 2015",f);
+//        System.out.println(date1);
+//        LocalDate date2 = LocalDate.parse("2015-02-01");
+//        System.out.println(date2);
+        System.out.println(ld);
+
+
 
 
 
